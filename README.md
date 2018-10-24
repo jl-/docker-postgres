@@ -5,7 +5,7 @@ services:
   db:
     build:
       context: ./db
-    image: codesmith/db
+    image: demoapp/db
     volumes:
       - db_master:/var/lib/postgresql
       - path_to_your_confs_folder:/var/lib/postgresql/confs # for example ./confs
